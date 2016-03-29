@@ -2,14 +2,11 @@
 (prelude-require-package 'gradle-mode)
 (prelude-require-package 'groovy-mode)
 (prelude-require-package 'ensime)
-(prelude-require-package 'emacs-eclim)
 (prelude-require-package 'clj-refactor)
+(prelude-require-package 'docker)
+(prelude-require-package 'dockerfile-mode)
 
-(add-hook 'scala-mode-hook 'ensime-scala-mode-hook)
-(require 'eclim)
 (require 'clj-refactor)
-(global-eclim-mode)
-(require 'eclimd)
 (setq ad-redefinition-action 'accept)
 
 (defun my-clojure-mode-hook ()
